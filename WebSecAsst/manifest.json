@@ -1,7 +1,7 @@
 {
   "name": "WebSecAssistant",
   "version": "1.0.1",
-  "description": "WebSecAssistant",
+  "description": "WebSecAsst",
   "permissions": [
     "downloads",
     "history",
