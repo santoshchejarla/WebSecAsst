@@ -1,0 +1,11 @@
+requests
+tldextract
+whois
+urllib3
+pyOpenSSL
+scikit-learn
+beautifulsoup4
+pickle-mixin
+xgboost
+numpy
+pandas
