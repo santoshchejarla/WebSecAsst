@@ -3,14 +3,14 @@
 <h2 align="center"> A Machine Learning based Chrome Extension </h2>
 
 <p align="center">
-<img height=150 src="WebSecAssistant/images/WebSecAssistant.png"></p>
+<img height=150 src="WebSecAsst/images/WebSecAssistant.png"></p>
 
 --- 
 
 ### Setup
 
 ```
-git clone https://github.com/chsantoshkumar211/fyp.git
+git clone https://github.com/chsantoshkumar211/WebSecAsst.git
 ```
 ```
 cd WebSecAsst
