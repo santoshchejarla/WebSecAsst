@@ -1,4 +1,4 @@
-#! /home/chs/anaconda3/envs/sw/bin/python 
+#! /var/www/html/WebSecAsst/venv/websecasst/bin/python3.9
 import requests
 import json
 import sys 
