@@ -1,10 +1,13 @@
-#! /home/chs/anaconda3/envs/sw/bin/python 
+#! /var/www/html/WebSecAsst/venv/websecasst/bin/python3.9
 import requests
 import json
 import sys 
 import hashlib
-from os import path
+from os import path,getenv
 import time
+
+keyfile=open('apikey','r')
+key=keyfile.read()
 
 url = 'https://www.virustotal.com/vtapi/v2/file/report'
 localpath = sys.argv[1]
@@ -18,7 +21,7 @@ if path.exists(localpath):
 
     md5hash=file_hash.hexdigest()
 
-    params = {'apikey': 'abbdcbd4548c2338e7c7177f6ee5e58762ba1d0af1fbd6336c65baff165c2f42', 'resource': md5hash }
+    params = {'apikey': key, 'resource': md5hash }
 
     response = requests.get(url, params=params)
     response=response.json()

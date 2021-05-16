@@ -1,4 +1,4 @@
-#! /home/chs/anaconda3/envs/sw/bin/python 
+#! /var/www/html/WebSecAsst/venv/websecasst/bin/python3.9
 import requests
 import re
 import tldextract
@@ -269,7 +269,8 @@ columns=['having_IP_Address','URL_Length','Shortining_Service','having_At_Symbol
 df=[]
 df.append(checks)
 df=pd.DataFrame(df,columns=columns)
-model=pickle.load(open('xgbmodel.pkl',"rb"))
+model=xgboost.XGBClassifier()
+model.load_model('xgbmodel')
 if model.predict(df)[0]==1:
     print("SAFE")
 else:
