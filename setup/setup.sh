@@ -10,9 +10,9 @@ sudo systemctl restart apache2
 
 sudo cp -r WebSecAsst /var/www/html/
 sudo mkdir /var/www/html/WebSecAsst/venv
-sudo chmod 777 /var/www/html/WebSecAsst
-sudo chmod 777 /var/www/html/WebSecAsst/*
+sudo chmod 777 -R /var/www/html/WebSecAsst
+sudo chmod 777 -R /var/www/html/WebSecAsst/*
 sudo python3.9 -m venv /var/www/html/WebSecAsst/venv/websecasst
-sudo chmod 777 /var/www/html/WebSecAsst/venv/*
+sudo chmod 777 -R /var/www/html/WebSecAsst/venv/*
 sudo /var/www/html/WebSecAsst/venv/websecasst/bin/python3.9 get-pip.py
 sudo /var/www/html/WebSecAsst/venv/websecasst/bin/python3.9 -m pip install dist/WebSecAsst-1.0.1-py3-none-any.whl
